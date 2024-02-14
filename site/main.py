@@ -9,9 +9,10 @@ def index1(title):
     return render_template('base.html', title=title)
 
 
-@app.route('/training/<prof>')
-def training(prof):
-    return render_template('training.html', prof=prof)
+@app.route('/training/<lst>')
+def training(lst):
+    profs = ['Автомеханик', 'Агроинженер', 'Программист', 'Клоун', 'Юрист', 'Каскадер', 'Актер']
+    return render_template('base_1.html', list=lst, profs=profs)
 
 
 if __name__ == "__main__":
