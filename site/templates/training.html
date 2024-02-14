@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if prof in ("инженер", "строитель") %}
+        <h2>Инженерные тренажеры</h2>
+        <img src="/static/img.png" alt="самолет" width="200" height="auto">
+    {% else %}
+        <h2>Научные симуляторы</h2>
+        <img src="/static/img_1.png" alt="самолет1" width="200" height="auto">
+    {% endif %}
+{% endblock %}
